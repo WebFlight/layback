@@ -4,7 +4,7 @@
   "description": "Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "grunt commit"
   },
   "repository": {
     "type": "git",
@@ -23,5 +23,25 @@
   "bugs": {
     "url": "https://github.com/WebFlight/sleeper/issues"
   },
-  "homepage": "https://github.com/WebFlight/sleeper"
+  "homepage": "https://github.com/WebFlight/sleeper",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-complexity": "^0.3.0",
+    "grunt-eslint": "^10.0.0",
+    "grunt-filenames": "^0.4.0",
+    "grunt-githooks": "^0.3.1",
+    "grunt-jscs": "^1.6.0",
+    "grunt-jsonlint": "^1.0.4",
+    "grunt-mocha-istanbul": "^2.3.1",
+    "grunt-mocha-test": "^0.12.7",
+    "istanbul": "^0.3.13",
+    "jscs": "^1.12.0",
+    "jscs-jsdoc": "^0.4.6",
+    "load-grunt-tasks": "^3.1.0",
+    "mocha": "^2.2.4",
+    "time-grunt": "^1.1.0",
+    "xunit-file": "0.0.6"
+  },
+  "dependencies": {}
 }

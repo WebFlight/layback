@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+/*eslint no-console:0*/
 
 var program = require("commander");
 
@@ -11,10 +12,10 @@ program
     console.log(path + " " + host);
   });
 
-program.on('--help', function() {
-    console.log('  Examples:');
+program.on("--help", function() {
+    console.log("  Examples:");
     console.log();
-    console.log('    $ sleeper validate ./swagger.json http://localhost/:3000');
+    console.log("    $ sleeper validate ./swagger.json http://localhost/:3000");
     console.log();
   });
 

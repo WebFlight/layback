@@ -47,7 +47,7 @@ module.exports = function(grunt) {
         istanbul_check_coverage: {
             default: {
                 options: {
-                    coverageFolder: "coverage*" // will check both coverage folders and merge the coverage results
+                    coverageFolder: "coverage/*" // will check both coverage folders and merge the coverage results
                 }
             }
         },
@@ -56,6 +56,18 @@ module.exports = function(grunt) {
                 valid: "dashes"
             },
             src: [libraryDirectory, testsDirectory]
+        },
+        coveralls: {
+            options: {
+              // When true, grunt-coveralls will only print a warning rather than
+              // an error, to prevent CI builds from failing unnecessarily (e.g. if
+              // coveralls.io is down). Optional, defaults to false.
+              force: true
+            },
+            allCoverage: {
+              // Target-specific LCOV coverage file
+              src: "coverage/lcov.info"
+            }
         }
     });
 
@@ -86,5 +98,10 @@ module.exports = function(grunt) {
 
     grunt.registerTask("test", [
         "mocha_istanbul"
+    ]);
+
+    grunt.registerTask("build", [
+        "commit",
+        "coveralls"
     ]);
 };

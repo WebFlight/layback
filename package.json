@@ -4,7 +4,8 @@
   "description": "Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
   "main": "index.js",
   "scripts": {
-    "test": "grunt commit"
+    "test": "grunt commit",
+    "build": "grunt build"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",
     "grunt-complexity": "^0.3.0",
+    "grunt-coveralls": "^1.0.0",
     "grunt-eslint": "^10.0.0",
     "grunt-filenames": "^0.4.0",
     "grunt-githooks": "^0.3.1",

@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-    var libraryDirectory = ["./lib/**/*.js"];
+    var libraryDirectory = ["./lib/**/*.js", "./bin/**/*.js"];
     var testsDirectory = ["./tests/**/*.js"];
 
     require("load-grunt-tasks")(grunt);

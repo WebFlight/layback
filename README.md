@@ -10,11 +10,8 @@ Sleeper is a command-line tool for validating API documentation written in Swagg
 ## VM in Docker
 
 ```shell
-# Asuming your in the root dir first build the image:
-docker build --tag="sleeper" ./
-
-# Run the container
-docker run --rm -it -v /path/to/sleeper:/var/www sleeper
+# Running from the root of the project
+bash ./scritps/docker_boot.sh
 ```
 
 # Philosophy behind this project

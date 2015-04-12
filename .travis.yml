@@ -8,4 +8,5 @@ notifications:
       - kim@web-flight.nl
     on_success: change
     on_failure: always
+before_install: "npm link"
 script: "npm run build"

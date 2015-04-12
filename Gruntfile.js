@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
 
-    var libraryDirectory = ["./lib/**/*.js"];
+    var libraryDirectory = ["./lib/**/*.js", "./bin/**/*.js"];
     var testsDirectory = ["./tests/**/*.js"];
 
     require("load-grunt-tasks")(grunt);
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                   reporter: "xunit-file",
                   clearRequireCache: true
                 },
-                src: ["test/**/*.js"]
+                src: [testsDirectory]
             }
         },
         mocha_istanbul: {
@@ -97,7 +97,7 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask("test", [
-        "mocha_istanbul"
+        "mochaTest"
     ]);
 
     grunt.registerTask("build", [

@@ -2,9 +2,13 @@
   "name": "sleeper",
   "version": "0.0.1",
   "description": "Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
-  "main": "index.js",
+  "main": "lib/sleeper.js",
+  "preferGlobal": "true",
+  "bin": {
+    "sleeper": "bin/sleeper.js"
+  },
   "scripts": {
-    "test": "grunt commit",
+    "test": "grunt test",
     "build": "grunt build"
   },
   "repository": {
@@ -45,5 +49,7 @@
     "time-grunt": "^1.1.0",
     "xunit-file": "0.0.6"
   },
-  "dependencies": {}
+  "dependencies": {
+    "commander": "^2.7.1"
+  }
 }

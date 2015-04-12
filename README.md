@@ -1,9 +1,6 @@
 # Sleeper
+[![Build Status](https://travis-ci.org/WebFlight/sleeper.svg?branch=master)](https://travis-ci.org/WebFlight/sleeper) [![Code Climate](https://codeclimate.com/github/WebFlight/sleeper/badges/gpa.svg)](https://codeclimate.com/github/WebFlight/sleeper) [![Coverage Status](https://coveralls.io/repos/WebFlight/sleeper/badge.svg)](https://coveralls.io/r/WebFlight/sleeper)
 Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation. This tool is inspired by Dredd, the API validation tool of API blueprint.
-
-[![Code Climate](https://codeclimate.com/github/WebFlight/sleeper/badges/gpa.svg)](https://codeclimate.com/github/WebFlight/sleeper)
-
-[![Coverage Status](https://coveralls.io/repos/WebFlight/sleeper/badge.svg)](https://coveralls.io/r/WebFlight/sleeper)
 
 # Tools
 

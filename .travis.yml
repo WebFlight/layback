@@ -8,3 +8,4 @@ notifications:
       - kim@web-flight.nl
     on_success: change
     on_failure: always
+script: "npm run build"

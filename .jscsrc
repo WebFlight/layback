@@ -1,0 +1,10 @@
+{
+    "plugins": [
+        "jscs-jsdoc"
+    ],
+    "jsDoc": {
+        "checkAnnotations": true,
+        "checkTypes": "strictNativeCase",
+        "enforceExistence": "exceptExports"
+    }
+}

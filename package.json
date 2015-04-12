@@ -1,0 +1,27 @@
+{
+  "name": "sleeper",
+  "version": "0.0.1",
+  "description": "Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WebFlight/sleeper.git"
+  },
+  "keywords": [
+    "api",
+    "test",
+    "testing",
+    "documentation",
+    "acceptance",
+    "integration"
+  ],
+  "author": "Kim Pellikaan <kim@web-flight.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WebFlight/sleeper/issues"
+  },
+  "homepage": "https://github.com/WebFlight/sleeper"
+}

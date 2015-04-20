@@ -6,14 +6,14 @@ describe("Validates CLI behavior", function() {
     var capturedStdout;
 
     before(function(done){
-        exec("layback validate ./swagger.json http://localhost/:3000", function (error, stdout, stderr) {
-            if (error || stderr) { done(error + stderr); }
+        exec("layback validate ./tests/fixtures/swagger.json http://localhost/:3000", function (error, stdout, stderr) {
+            if (error || stderr) { return done(error + stderr); }
             capturedStdout = stdout;
             done();
         });
     });
 
-    it("Should return hallo world", function() {
-        assert.equal(capturedStdout, "./swagger.json http://localhost/:3000\n");
+    it("Should return success message", function() {
+        assert.equal(capturedStdout, "Hoera, documentation is valid!\n");
     });
 });

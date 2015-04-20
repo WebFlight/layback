@@ -15,7 +15,7 @@ program
 program.on("--help", function() {
     console.log("  Examples:");
     console.log();
-    console.log("    $ sleeper validate ./swagger.json http://localhost/:3000");
+    console.log("    $ layback validate ./swagger.json http://localhost/:3000");
     console.log();
   });
 

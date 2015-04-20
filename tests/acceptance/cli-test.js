@@ -6,7 +6,7 @@ describe("Validates CLI behavior", function() {
     var capturedStdout;
 
     before(function(done){
-        exec("sleeper validate ./swagger.json http://localhost/:3000", function (error, stdout, stderr) {
+        exec("layback validate ./swagger.json http://localhost/:3000", function (error, stdout, stderr) {
             if (error || stderr) { done(error + stderr); }
             capturedStdout = stdout;
             done();

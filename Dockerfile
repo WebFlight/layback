@@ -10,7 +10,7 @@ ADD ./ /var/www/
 # Define working directory.
 WORKDIR /var/www
 
-# Install sleeper as bin
+# Install layback as bin
 RUN npm link
 
 # Define default command.

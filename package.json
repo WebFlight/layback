@@ -1,11 +1,11 @@
 {
-  "name": "sleeper",
+  "name": "layback",
   "version": "0.0.1",
-  "description": "Sleeper is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
-  "main": "lib/sleeper.js",
+  "description": "layback is a command-line tool for validating API documentation written in Swagger format against its backend implementation.",
+  "main": "lib/layback.js",
   "preferGlobal": "true",
   "bin": {
-    "sleeper": "bin/sleeper.js"
+    "layback": "bin/layback.js"
   },
   "scripts": {
     "test": "grunt test",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/WebFlight/sleeper.git"
+    "url": "https://github.com/WebFlight/layback.git"
   },
   "keywords": [
     "api",
@@ -26,9 +26,9 @@
   "author": "Kim Pellikaan <kim@web-flight.nl>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/WebFlight/sleeper/issues"
+    "url": "https://github.com/WebFlight/layback/issues"
   },
-  "homepage": "https://github.com/WebFlight/sleeper",
+  "homepage": "https://github.com/WebFlight/layback",
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-cli": "^0.1.13",

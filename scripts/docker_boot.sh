@@ -1,8 +1,8 @@
 #! /bin/bash
 
-if [[ $(docker images) != *sleeper* ]]; then
-	docker build --tag="sleeper" ./
+if [[ $(docker images) != *layback* ]]; then
+	docker build --tag="layback" ./
 fi
 
 ROOT_PATH=$(pwd)
-docker run --rm -it -v $ROOT_PATH:/var/www sleeper
+docker run --rm -it -v $ROOT_PATH:/var/www layback

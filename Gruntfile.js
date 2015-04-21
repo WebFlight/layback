@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         jscs: {
-            src: libraryDirectory
+            src: [libraryDirectory]
         },
         jsonlint: {
             all: {
@@ -16,7 +16,7 @@ module.exports = function(grunt) {
             }
         },
         eslint: {
-            target: libraryDirectory
+            target: [libraryDirectory, testsDirectory]
         },
         githooks: {
             all: {

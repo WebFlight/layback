@@ -1,5 +1,5 @@
 # layback
-[![Build Status](https://travis-ci.org/WebFlight/layback.svg?branch=master)](https://travis-ci.org/WebFlight/layback) [![Code Climate](https://codeclimate.com/github/WebFlight/layback/badges/gpa.svg)](https://codeclimate.com/github/WebFlight/layback)[![Coverage Status](https://coveralls.io/repos/WebFlight/layback/badge.svg?branch=master)](https://coveralls.io/r/WebFlight/layback?branch=master)
+[![Build Status](https://travis-ci.org/WebFlight/layback.svg?branch=master)](https://travis-ci.org/WebFlight/layback) [![Code Climate](https://codeclimate.com/github/WebFlight/layback/badges/gpa.svg)](https://codeclimate.com/github/WebFlight/layback)[![Coverage Status](https://coveralls.io/repos/WebFlight/layback/badge.svg?branch=master)](https://coveralls.io/r/WebFlight/layback?branch=master) [![Inline docs](http://inch-ci.org/github/WebFlight/layback.svg?branch=master)](http://inch-ci.org/github/WebFlight/layback)
 
 layback is a command-line tool for validating API documentation written in Swagger format against its backend implementation. This tool is inspired by Dredd, the API validation tool of API blueprint.
 

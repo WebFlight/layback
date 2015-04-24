@@ -5,6 +5,8 @@ var layback = rewire("../../lib/layback.js");
 var path = "../fixtures/swagger.json";
 var host = "http://localhost/:3000";
 
+var swaggerObejct = {"swagger": "is da bom"};
+
 /*eslint no-unused-expressions:0 */
 /*eslint no-sequences:0 */
 /*eslint no-underscore-dangle:0 */
@@ -16,14 +18,14 @@ describe("Validates the validator", function() {
             layback.__set__({fs: {
                 readFile: function (path, encoding, cb) {
                     assert.equal(path, "../fixtures/swagger.json");
-                    cb(null, "Hoera, documentation is valid!");
+                    cb(null, swaggerObejct);
                 }
             }});
         });
         it("Should return success message", function() {
             layback.validate(path, host, function(err, result) {
                 assert.ifError(err);
-                assert.equal(result, "Hoera, documentation is valid!");
+                assert.equal(result, swaggerObejct);
             });
         });
     }),
